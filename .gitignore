@@ -1,0 +1,10 @@
+.env
+install/installed.lock
+uploads/**
+!uploads/.gitkeep
+!uploads/.htaccess
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/

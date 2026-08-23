@@ -4,6 +4,11 @@
 --
 -- Engine/version target: MySQL 8.0+ / MariaDB 10.6+ (utf8mb4, JSON, CURRENT_TIMESTAMP on DATETIME).
 -- Character set: utf8mb4 so Indian-language and emoji copy is safe.
+--
+-- Hostinger: create the database in hPanel first. The installer skips CREATE DATABASE
+-- and USE because shared-hosting users cannot create schemas and the real name is
+-- prefixed (e.g. u123456789_pmratnam). Statements below still include CREATE DATABASE
+-- for local/dev convenience; production installs ignore those two statements.
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;

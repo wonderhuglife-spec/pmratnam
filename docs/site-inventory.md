@@ -3,7 +3,7 @@
 Audit date: 2026-08-23
 Repository snapshot: `https://github.com/wonderhuglife-spec/pmratnam` (branch used for this audit: current clone of `main`).
 Live site: `https://pmratnam.com/`
-Hosting: **not confirmed**. This repo is static HTML (Tailwind CDN, Font Awesome CDN, no PHP/MySQL). The CMS in later phases requires PHP 8.x + MySQL-capable hosting. Confirm before Phase B.
+Hosting: **Hostinger** (confirmed Phase B). Target: PHP 8.1+ (hPanel → PHP Configuration), MySQL/MariaDB created in hPanel (prefixed db/user names). Document root remains `public_html` so existing `.html` files keep working; CMS PHP lives in `/admin`, `/install`, `/config`, `/includes` with `.htaccess` denying secrets. `DB_HOST` is usually `localhost`. The installer does **not** `CREATE DATABASE` (shared hosting has no privilege); it uses the database you create in hPanel.
 
 This file is the persistent memory for later phase-blocks. Do not recreate it; extend it.
 

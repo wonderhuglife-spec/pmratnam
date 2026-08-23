@@ -1,0 +1,22 @@
+# Hostinger: keep this in public_html. Do not send the whole site through /public
+# yet — existing .html files must keep working.
+
+Options -Indexes
+ServerSignature Off
+
+<IfModule mod_authz_core.c>
+  <FilesMatch "^(\.env|.*\.lock)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+  <FilesMatch "^(\.env|.*\.lock)$">
+    Order allow,deny
+    Deny from all
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(config|includes|database|docs)(/|$) - [F,L]
+</IfModule>
