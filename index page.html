@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mani Ratnam | Freelance Digital Marketer in Hyderabad</title>
+    <meta name="description" content="PMR Digital Marketing Agency by Mani Ratnam. Expert SEO, Web Development, and Digital Marketing services in Hyderabad to grow your business online.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            orange: '#FF3300', 
+                            teal: '#006B70',   
+                            dark: '#111827',
+                            light: '#F9FAFB'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for specialized styling -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(0, 107, 112, 0.05) 0%, rgba(255, 51, 0, 0.05) 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #006B70;
+        }
+        
+        /* Sticky Header Transition */
+        #header {
+            background-color: transparent;
+        }
+        #header.scrolled {
+            background-color: #222429;
+            box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.3);
+        }
+        #header.scrolled #top-bar {
+            display: none;
+        }
+
+        /* Dropdown custom styling */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 280px;
+            background-color: #2a2c33;
+            border-top: 2px solid #E32636;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        .nav-item.group:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #006B70; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #004d50; 
+        }
+
+        /* Native HTML5 Accordion Styling for FAQ */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Header / Navigation -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 flex flex-col">
+        
+        <!-- Top Bar -->
+        <div id="top-bar" class="hidden lg:flex justify-between items-center px-6 py-2 bg-[#1c1d21] text-gray-300 text-sm border-b border-gray-700">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                <span class="font-medium tracking-wide">Plot. No – B5, Koteswara Rao Building, Ameerpet, Hyderabad - 500073</span>
+            </div>
+            
+            <div class="flex items-center gap-3 ml-8">
+                <i class="fas fa-envelope text-white text-lg"></i>
+                <a href="mailto:info@pmratnam.com" class="font-medium hover:text-white transition tracking-wide">info@pmratnam.com</a>
+            </div>
+            
+            <div class="flex items-center gap-8 ml-auto">
+                <div class="space-x-4 font-medium tracking-wide">
+                    <a href="#about" class="hover:text-white transition">About</a> <span class="text-gray-600">/</span>
+                    <a href="#faq" class="hover:text-white transition">FAQ's</a> <span class="text-gray-600">/</span>
+                    <a href="#contact" class="hover:text-white transition">Contact</a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="far fa-comments text-[#E32636] text-3xl"></i>
+                    <div class="flex flex-col">
+                        <span class="text-[11px] text-gray-400 leading-tight">Call anytime</span>
+                        <a href="tel:+918499932365" class="text-white font-bold text-base leading-tight tracking-wide">+91 8499932365</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <nav class="bg-[#222429] w-full py-4 px-4 lg:px-6 relative z-40 border-b border-gray-800">
+            <div class="max-w-[1400px] mx-auto flex justify-between items-center">
+                
+                <!-- Text Logo -->
+                <a href="#" class="flex-shrink-0">
+                    <span class="text-white text-3xl font-extrabold tracking-widest uppercase">PMRATNAM</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 xl:space-x-10">
+                    <a href="#home" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Home</a>
+                    <a href="#about" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">About</a>
+                    
+                    <!-- Services Dropdown Group -->
+                    <div class="relative nav-item group py-2">
+                        <a href="#services" class="text-white font-bold hover:text-[#E32636] transition tracking-wide cursor-pointer flex items-center">
+                            Services
+                        </a>
+                        <div class="absolute left-0 top-[100%] mt-0 w-72 bg-[#2a2c33] border-t-2 border-[#E32636] shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
+                            <ul class="py-2">
+                                <li><a href="seo-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Search Engine Optimization</a></li>
+                                <li><a href="ppc-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Pay-Per-Click Advertising</a></li>
+                                <li><a href="smm-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Social Media Marketing</a></li>
+                                <li><a href="content-marketing.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Content Marketing</a></li>
+                                <li><a href="web-development.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Web Development</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#blog" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Blog</a>
+                    <a href="#contact" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Contact</a>
+                </div>
+
+                <!-- Right Actions (Desktop) -->
+                <div class="hidden lg:flex items-center gap-4 xl:gap-5">
+                    <button id="sidebar-open-btn-desktop" class="text-[#E32636] hover:text-white transition p-2 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+                    
+                    <div class="flex gap-2 mx-1 xl:mx-3">
+                        <a href="https://x.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="https://www.facebook.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-pinterest-p text-sm"></i></a>
+                        <a href="https://www.instagram.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-instagram text-sm"></i></a>
+                        <a href="https://www.youtube.com/@pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+                    
+                    <a href="#contact" class="bg-[#E32636] text-white px-6 py-2.5 font-bold hover:bg-red-700 transition rounded-sm text-[15px] shadow-md tracking-wide">Get Solution</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="sidebar-open-btn-mobile" class="text-[#E32636] focus:outline-none p-2">
+                        <i class="fas fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-[60] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <!-- Right Sidebar Menu matching exact reference screenshot -->
+    <div id="sidebar-menu" class="fixed top-0 right-0 h-full w-full sm:w-80 bg-white z-[70] transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col overflow-y-auto">
+        <!-- Sidebar Header -->
+        <div class="p-6 flex justify-between items-center border-b border-gray-100">
+            <span class="text-xl font-black text-gray-900 tracking-wider">PMRATNAM</span>
+            <button id="sidebar-close-btn" class="text-red-600 hover:text-red-800 text-2xl transition focus:outline-none p-1">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar Navigation Links -->
+        <div class="p-6 flex-grow space-y-6">
+            <ul class="space-y-4 font-bold text-gray-900 text-lg">
+                <li><a href="#home" class="sidebar-link hover:text-[#E32636] transition block">Home</a></li>
+                <li><a href="#about" class="sidebar-link hover:text-[#E32636] transition block">About</a></li>
+                <li>
+                    <div class="flex justify-between items-center cursor-pointer" id="sidebar-services-toggle">
+                        <span class="sidebar-link hover:text-[#E32636] transition">Services</span>
+                        <span class="text-[#E32636] text-xl font-bold" id="sidebar-services-icon">+</span>
+                    </div>
+                    <ul id="sidebar-services-content" class="hidden pl-4 mt-3 space-y-2 text-sm font-semibold text-gray-600">
+                        <li><a href="seo-services.html" class="sidebar-link block hover:text-[#E32636]">SEO Optimization</a></li>
+                        <li><a href="ppc-services.html" class="sidebar-link block hover:text-[#E32636]">Pay-Per-Click Ads</a></li>
+                        <li><a href="smm-services.html" class="sidebar-link block hover:text-[#E32636]">Social Media Marketing</a></li>
+                        <li><a href="content-marketing.html" class="sidebar-link block hover:text-[#E32636]">Content Marketing</a></li>
+                        <li><a href="web-development.html" class="sidebar-link block hover:text-[#E32636]">Web Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="#blog" class="sidebar-link hover:text-[#E32636] transition block">Blog</a></li>
+                <li><a href="#contact" class="sidebar-link hover:text-[#E32636] transition block">Contact</a></li>
+            </ul>
+
+            <hr class="border-gray-200 my-6">
+
+            <!-- Sidebar Contact Info -->
+            <div class="space-y-5 text-sm">
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-phone-volume text-[#E32636] text-xl mt-1"></i>
+                    <div>
+                        <p class="text-xs text-gray-400 font-medium">Call anytime</p>
+                        <a href="tel:+918499932365" class="text-gray-900 font-bold text-base hover:text-[#E32636] transition">+91 8499932365</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <i class="far fa-envelope text-[#E32636] text-xl mt-1"></i>
+                    <div>
+                        <p class="text-xs text-gray-400 font-medium">Send email</p>
+                        <a href="mailto:info@pmratnam.com" class="text-gray-900 font-bold text-sm hover:text-[#E32636] transition break-all">info@pmratnam.com</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-map-marker-alt text-[#E32636] text-xl mt-1 px-0.5"></i>
+                    <div>
+                        <p class="text-gray-600 leading-relaxed font-medium">
+                            Plot. No – B5, Koteswara Rao Building<br>
+                            Ameerpet, Hyderabad - 500073
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Social Icons (Red Square style) -->
+            <div class="flex gap-2 pt-4 pb-8">
+                <a href="https://x.com/pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.instagram.com/pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg pt-32 pb-16 lg:pt-44 lg:pb-20 relative overflow-hidden flex items-center min-h-[75vh]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left pt-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 text-brand-orange font-semibold text-xs mb-6 border border-orange-100">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-orange opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-orange"></span>
+                        </span>
+                        Available for New Projects
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#111827] leading-tight mb-6">
+                        Hi, I'm Parsapu Mani Ratnam <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-orange mt-2 inline-block">Digital Marketer</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        I help businesses in Hyderabad and globally scale their online presence, drive targeted traffic, and increase conversions through data-driven SEO and Web Solutions.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contact" class="bg-[#FF3300] text-white px-8 py-3.5 rounded-full font-bold hover:bg-red-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2 text-sm tracking-wide">
+                            Get a Free Audit <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#portfolio" class="bg-transparent text-brand-teal border-2 border-brand-teal px-8 py-3.5 rounded-full font-bold hover:bg-teal-50 transition text-center flex items-center justify-center gap-2 text-sm tracking-wide">
+                            View My Work <i class="fas fa-briefcase"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Metrics -->
+                    <div class="mt-12 grid grid-cols-3 gap-8 border-t border-gray-200 pt-6 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl font-extrabold text-brand-teal mb-1">5+</p>
+                            <p class="text-xs text-gray-500 font-medium">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-brand-teal mb-1">50+</p>
+                            <p class="text-xs text-gray-500 font-medium">Projects Delivered</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-brand-teal mb-1">100%</p>
+                            <p class="text-xs text-gray-500 font-medium">Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image/Graphic -->
+                <div class="relative hidden lg:block h-full">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-teal/10 to-brand-orange/10 rounded-full blur-3xl transform scale-110"></div>
+                    <div class="relative flex justify-end pr-10">
+                        <div class="relative z-10">
+                             <img src="WhatsApp Image 2026-07-21 at 10.38.31 PM_2.jpg" alt="Mani Ratnam Digital Marketing Expert" class="w-[420px] object-cover rounded-2xl shadow-sm z-10 relative bg-white p-2">
+                             
+                             <div class="absolute top-[40%] -left-24 bg-white p-4 rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] flex items-center gap-4 z-20 border border-gray-50 w-64">
+                                <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center text-green-500 text-lg">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-0.5">Traffic Growth</p>
+                                    <p class="text-xl font-extrabold text-gray-900 leading-none">+150%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-[#FAFAFA]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-[#FF3300] font-bold tracking-widest uppercase text-xs">WHAT I DO</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1a1a1a] mt-2 mb-4">Comprehensive Web & Digital Solutions</h2>
+                <p class="text-gray-500 text-base max-w-2xl mx-auto leading-relaxed">
+                    From crafting lightning-fast websites to dominating search engine rankings, I provide end-to-end digital services tailored for your growth.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col h-full">
+                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-brand-teal text-xl mb-6 shadow-sm border border-teal-100/50">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">SEO Optimization</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed flex-grow">Boost your organic visibility. I implement advanced On-page, Off-page, and Technical SEO strategies to get you on...</p>
+                    <ul class="text-sm text-gray-500 space-y-2.5">
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Keyword Research</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Local SEO (Hyderabad)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Technical Audits</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col h-full">
+                    <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-brand-orange text-xl mb-6 shadow-sm border border-orange-100/50">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Website Development</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed flex-grow">Fast, responsive, and SEO-friendly websites. Whether it's a corporate site or an E-commerce store, I build digital...</p>
+                    <ul class="text-sm text-gray-500 space-y-2.5">
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> UI/UX Design</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> E-commerce Solutions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Performance Tuning</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col h-full">
+                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-brand-teal text-xl mb-6 shadow-sm border border-teal-100/50">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Google Ads (PPC)</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed flex-grow">Maximize your ROI with data-driven Google Ads campaigns. Get immediate visibility and high-quality leads tailored ...</p>
+                    <ul class="text-sm text-gray-500 space-y-2.5">
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Search & Display Ads</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Conversion Tracking</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Campaign Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col h-full">
+                    <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-brand-orange text-xl mb-6 shadow-sm border border-orange-100/50">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Social Media Marketing</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed flex-grow">Build brand loyalty and engage your audience on platforms like Instagram, Facebook, and LinkedIn with targeted...</p>
+                    <ul class="text-sm text-gray-500 space-y-2.5">
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Social Media Management</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Paid Social Ads</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Brand Awareness</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col h-full">
+                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-brand-teal text-xl mb-6 shadow-sm border border-teal-100/50">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Content Marketing</h3>
+                    <p class="text-gray-500 mb-6 text-sm leading-relaxed flex-grow">Compelling copy that speaks to your audience and search engines. From blog posts to landing pages, content is king.</p>
+                    <ul class="text-sm text-gray-500 space-y-2.5">
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> SEO Copywriting</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Blog Management</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#FF3300] text-[10px] mr-3"></i> Landing Page Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="bg-[#006B70] p-8 rounded-2xl shadow-sm border border-transparent text-white flex flex-col justify-center text-center h-full">
+                    <h3 class="text-2xl font-bold mb-4">Need a Custom Solution?</h3>
+                    <p class="mb-8 text-teal-50 text-sm leading-relaxed">Let's discuss your specific business goals and craft a personalized strategy to achieve them.</p>
+                    <a href="#contact" class="bg-white text-brand-teal px-6 py-3.5 rounded-full font-bold hover:bg-gray-50 transition shadow-md w-full inline-block text-sm">
+                        Talk to Mani Ratnam
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm">Case Studies</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-4">Featured Work</h2>
+                <p class="text-gray-600 text-lg">
+                    Real results for real businesses. See how my strategies have transformed online presence across various industries.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm">
+                <div class="grid lg:grid-cols-2">
+                    <div class="h-64 lg:h-auto w-full relative">
+                        <img src="Top Travel Destinations to Explore in 2024.jpg" alt="Travel Destinations Campaign" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/800x600/111827/FFFFFF?text=Top+Travel+Destinations+to+Explore+in+2024';">
+                    </div>
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <span class="inline-block bg-teal-100 text-brand-teal font-semibold px-3 py-1 rounded-full text-xs mb-4 w-max">Travel & Tourism SEO</span>
+                        <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Wanderlust Travels: 300% Organic Traffic Growth</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A comprehensive SEO and content strategy for a leading travel agency. By targeting long-tail keywords for "Top Travel Destinations in 2024", optimizing site structure, and building high-quality backlinks, we achieved massive visibility in a highly competitive niche.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-gray-700 font-medium text-sm">
+                            <li class="flex items-center gap-3"><i class="fas fa-arrow-up text-green-500"></i> +300% Increase in Organic Traffic (6 months)</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-arrow-up text-green-500"></i> Page 1 Rankings for 45+ Core Keywords</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-arrow-up text-green-500"></i> 150% Boost in Lead Form Submissions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm">Digital Insights</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-4">Latest from the Blog</h2>
+                <p class="text-gray-600 text-lg">
+                    Stay updated with the latest trends, tips, and strategies in SEO, Web Development, and Digital Marketing.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/600x400/006B70/FFFFFF?text=SEO+Trends" alt="SEO Trends" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center text-sm text-gray-500 mb-3 gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-calendar-alt"></i> Jul 15, 2026</span>
+                            <span class="text-brand-teal font-medium bg-teal-50 px-2 py-0.5 rounded-full text-xs">SEO</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-brand-orange transition">
+                            <a href="#">The Future of Search: How AI is Reshaping Local SEO in Hyderabad</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 flex-grow text-sm">
+                            Discover the essential strategies local businesses need to adopt to stay ahead of AI-driven search engine updates and maintain top rankings.
+                        </p>
+                        <a href="#" class="text-brand-orange font-semibold hover:text-red-700 flex items-center gap-1 mt-auto text-sm">Read Article <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/600x400/FF3300/FFFFFF?text=Web+Vitals" alt="Web Performance" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center text-sm text-gray-500 mb-3 gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-calendar-alt"></i> Jul 02, 2026</span>
+                            <span class="text-brand-teal font-medium bg-teal-50 px-2 py-0.5 rounded-full text-xs">Web Dev</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-brand-orange transition">
+                            <a href="#">Why Core Web Vitals Are Crucial for Your eCommerce Success</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 flex-grow text-sm">
+                            A deep dive into site speed, visual stability, and interactivity. Learn how improving these metrics directly impacts your conversion rates and bottom line.
+                        </p>
+                        <a href="#" class="text-brand-orange font-semibold hover:text-red-700 flex items-center gap-1 mt-auto text-sm">Read Article <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=High+Converting+Ads" alt="Digital Ads" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center text-sm text-gray-500 mb-3 gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-calendar-alt"></i> Jun 18, 2026</span>
+                            <span class="text-brand-teal font-medium bg-teal-50 px-2 py-0.5 rounded-full text-xs">Ads</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-brand-orange transition">
+                            <a href="#">Crafting High-Converting Ad Copy for Social Media Campaigns</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 flex-grow text-sm">
+                            Stop wasting ad spend. Learn the psychological triggers and copywriting formulas that turn casual scrollers into paying customers.
+                        </p>
+                        <a href="#" class="text-brand-orange font-semibold hover:text-red-700 flex items-center gap-1 mt-auto text-sm">Read Article <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm">Queries</span>
+                <h2 class="text-3xl font-bold text-brand-dark mt-2">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <details class="group bg-gray-50 rounded-xl border border-gray-100 open:bg-white open:border-brand-teal open:shadow-sm transition-all duration-300">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-gray-900">
+                        <span>What digital marketing services do you provide?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-teal"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed text-sm">
+                        I offer a complete 360° digital ecosystem setup including Search Engine Optimization (SEO), Pay-Per-Click Advertising (Google Ads), Social Media Marketing, Content Marketing, and custom Website Development.
+                    </div>
+                </details>
+                
+                <details class="group bg-gray-50 rounded-xl border border-gray-100 open:bg-white open:border-brand-teal open:shadow-sm transition-all duration-300">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-gray-900">
+                        <span>Do you work with startups or established businesses?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-teal"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed text-sm">
+                        Both! For startups, I help lay down a strong digital foundation and initial traction strategy. For established businesses, I focus on auditing existing campaigns, optimizing conversion funnels, and scaling growth to the next level.
+                    </div>
+                </details>
+                
+                <details class="group bg-gray-50 rounded-xl border border-gray-100 open:bg-white open:border-brand-teal open:shadow-sm transition-all duration-300">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-gray-900">
+                        <span>How do we get started?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-teal"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed text-sm">
+                        It all starts with a free consultation and digital audit. Reach out to me via the contact form or WhatsApp. I'll analyze your current digital footprint and propose a strategic roadmap tailored to your goals.
+                    </div>
+                </details>
+
+                <details class="group bg-gray-50 rounded-xl border border-gray-100 open:bg-white open:border-brand-teal open:shadow-sm transition-all duration-300">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-gray-900">
+                        <span>Why should I hire a freelance consultant over an agency?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-teal"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed text-sm">
+                        When you work with me, you collaborate directly with the strategist executing the work—no account managers or communication gaps. You get agency-level expertise with personalized attention, faster turnaround times, and direct accountability.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm">Get in Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-6">Let's Grow Your Business Together</h2>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Ready to take your online presence to the next level? Drop me a message to discuss your project, request a free audit, or get a custom quote.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-teal-50 rounded-full flex items-center justify-center text-brand-teal text-xl shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Location</h4>
+                                <p class="text-gray-600">Hyderabad, Telangana, India<br><span class="text-sm text-brand-teal">(Available for Global Remote Work)</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center text-brand-orange text-xl shrink-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Call Me</h4>
+                                <a href="tel:+918499932365" class="text-gray-600 hover:text-brand-orange transition">+91 8499932365</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-teal-50 rounded-full flex items-center justify-center text-brand-teal text-xl shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Email Me</h4>
+                                <a href="mailto:info@pmratnam.com" class="text-gray-600 hover:text-brand-orange transition">info@pmratnam.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+                    
+                    <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm w-full'>
+                        <form id='webform917707000000700009' action='https://crm.zoho.in/crm/WebToLeadForm' name=WebToLeads917707000000700009 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory917707000000700009()' accept-charset='UTF-8' class="space-y-4">
+                            <input type='text' style='display:none;' name='xnQsjsdp' value='3374ae964dda5a4df49019e31926495098445af0d32ebc14a408eebf5d35a09a'>
+                            <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+                            <input type='text' style='display:none;' name='xmIwtLD' value='78e173fc09f157b0c296bf09f8c81316484e6f39ba90f2f58c4235d2d775217fba04835f5c67195bb23e7561a00c937a'>
+                            <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+                            <input type='text' style='display:none;' name='returnURL' value='https://pmratnam.com'>
+                            <input type='text' style='display:none;' name='aG9uZXlwb3Q' value=''>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for='First_Name' class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                    <input type='text' id='First_Name' name='First Name' maxlength='40' class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-white">
+                                </div>
+                                <div>
+                                    <label for='Last_Name' class="block text-sm font-medium text-gray-700 mb-1">Last Name <span class="text-brand-orange">*</span></label>
+                                    <input type='text' id='Last_Name' name='Last Name' maxlength='80' class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-white">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for='Company' class="block text-sm font-medium text-gray-700 mb-1">Company <span class="text-brand-orange">*</span></label>
+                                <input type='text' id='Company' name='Company' maxlength='200' class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-white">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for='Email' class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                    <input type='text' ftype='email' id='Email' name='Email' maxlength='100' class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-white">
+                                </div>
+                                <div>
+                                    <label for='Phone' class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                                    <input type='text' id='Phone' name='Phone' maxlength='30' class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-white">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for='Website' class="block text-sm font-medium text-gray-700 mb-1">Website</label>
+                                <input type='text' id='Website' name='Website' maxlength='255' class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-white">
+                            </div>
+
+                            <div>
+                                <label for='Description' class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                                <textarea id='Description' name='Description' rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition resize-none bg-white"></textarea>
+                            </div>
+
+                            <div class="flex gap-4 pt-2">
+                                <input type='submit' id='formsubmit' class="flex-1 bg-brand-orange text-white font-bold py-3.5 rounded-lg hover:bg-red-700 transition shadow-md cursor-pointer" value='Submit Form'>
+                                <input type='reset' class="px-6 py-3.5 rounded-lg border border-gray-300 font-medium text-gray-700 hover:bg-gray-100 transition cursor-pointer" name='reset' value='Reset'>
+                            </div>
+                            
+                            <script>
+                                function validateEmail917707000000700009(){
+                                    var form = document.forms['WebToLeads917707000000700009'];
+                                    var emailFld = form.querySelectorAll('[ftype=email]');
+                                    for(var i = 0; i < emailFld.length; i++ ) {
+                                        var emailVal = emailFld[i].value;
+                                        if ((emailVal.replace (/^\s+|\s+$/g,'') ) .length != 0) {
+                                            var atpos = emailVal.indexOf('@');
+                                            var dotpos = emailVal.lastIndexOf('.');
+                                            if(atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                                                alert('Please enter a valid email address. ');
+                                                emailFld[i].focus();
+                                                return false;
+                                            }
+                                        }
+                                    }
+                                    return true;
+                                }
+                                function checkMandatory917707000000700009(isAjax){
+                                    var mndFileds = new Array('Company', 'Last Name');
+                                    var fldLangVal = new Array('Company', 'Last Name');
+                                    for (var i = 0; i < mndFileds.length; i++ ) {
+                                        var fieldObj = document.forms['WebToLeads917707000000700009'] [mndFileds[i]];
+                                        if (fieldObj) {
+                                            if(((fieldObj.value) .replace (/^\s+|\s+$/g,'') ) .length == 0) {
+                                                alert(fldLangVal[i] + ' cannot be empty.');
+                                                fieldObj.focus();
+                                                return false;
+                                            }
+                                        }
+                                    }
+                                    if ( !validateEmail917707000000700009 () ) {
+                                        return false;
+                                    }
+                                    var submitBtn = document.getElementById('formsubmit');
+                                    submitBtn.value = 'Submitting...';
+                                    submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+                                }
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-brand-teal text-white pt-16 pb-8 border-t-4 border-brand-orange">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Quick Links</h4>
+                    <ul class="space-y-3 mt-4 text-sm">
+                        <li><a href="#home" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Home</a></li>
+                        <li><a href="#about" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> About Mani Ratnam</a></li>
+                        <li><a href="#portfolio" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> My Portfolio</a></li>
+                        <li><a href="#blog" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Digital Blogs</a></li>
+                        <li><a href="#contact" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Contact Me</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Cancellation & Refund</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Terms and Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">WEB Solutions</h4>
+                    <ul class="space-y-3 mt-4 text-sm">
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Website Development</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> E-commerce Website</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Website Maintenance & Support</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> UI/UX Design</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Landing Page Optimization</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Website Speed & Performance</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Digital Marketing</h4>
+                    <ul class="space-y-3 mt-4 text-sm">
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-start gap-2"><i class="fas fa-arrow-circle-right text-sm mt-1 shrink-0"></i> <span>Search Engine Optimization (SEO)</span></a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Social Media Marketing</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Google ADS</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Social Media management</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Content Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Contact Me</h4>
+                    <ul class="space-y-4 mt-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-location-arrow mt-1 text-lg shrink-0"></i>
+                            <span>Plot. No – B5, Koteswara Rao Building, Ameerpet, Hyderabad - 500073</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-volume text-lg shrink-0"></i>
+                            <a href="tel:+918499932365" class="hover:text-brand-orange transition">+91 8499932365</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="far fa-envelope text-lg shrink-0"></i>
+                            <a href="mailto:info@pmratnam.com" class="hover:text-brand-orange transition">info@pmratnam.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-history text-lg shrink-0"></i>
+                            <span>Mon – Sat: 09:00 AM – 7:00 PM</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-8 pt-6 border-t border-white/20 flex gap-3">
+                        <a href="https://www.facebook.com/pmratnam" target="_blank" aria-label="Facebook" class="w-10 h-10 rounded-sm bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/pmratnam" target="_blank" aria-label="Twitter" class="w-10 h-10 rounded-sm bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@pmratnam" target="_blank" aria-label="YouTube" class="w-10 h-10 rounded-sm bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/pmratnam" target="_blank" aria-label="Instagram" class="w-10 h-10 rounded-sm bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-sm bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-sm border-t border-white/20 pt-6">
+                <p>&copy; <span id="current-year"></span> Mani Ratnam Parsapu | PMR Digital Marketing Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chatbot Floating Button -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3 group cursor-pointer">
+        <div class="bg-white px-4 py-2.5 rounded-2xl shadow-xl border border-gray-100 text-sm font-bold text-gray-700 opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 hidden md:block">
+            Chat with me! 👋
+        </div>
+        <a href="https://wa.me/918499932365" target="_blank" rel="noopener noreferrer" class="relative flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 transition-transform duration-300">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-40 animate-ping"></span>
+            <i class="fab fa-whatsapp text-[36px] relative z-10"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Dynamic Copyright Year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Sidebar Logic
+            const sidebar = document.getElementById('sidebar-menu');
+            const overlay = document.getElementById('sidebar-overlay');
+            const openBtnDesktop = document.getElementById('sidebar-open-btn-desktop');
+            const openBtnMobile = document.getElementById('sidebar-open-btn-mobile');
+            const closeBtn = document.getElementById('sidebar-close-btn');
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            
+            const servicesToggle = document.getElementById('sidebar-services-toggle');
+            const servicesContent = document.getElementById('sidebar-services-content');
+            const servicesIcon = document.getElementById('sidebar-services-icon');
+
+            function openSidebar() {
+                sidebar.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeSidebar() {
+                sidebar.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            if (openBtnDesktop) openBtnDesktop.addEventListener('click', openSidebar);
+            if (openBtnMobile) openBtnMobile.addEventListener('click', openSidebar);
+            if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
+            if (overlay) overlay.addEventListener('click', closeSidebar);
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', closeSidebar);
+            });
+
+            if(servicesToggle) {
+                servicesToggle.addEventListener('click', () => {
+                    servicesContent.classList.toggle('hidden');
+                    if(servicesContent.classList.contains('hidden')){
+                        servicesIcon.textContent = '+';
+                    } else {
+                        servicesIcon.textContent = '-';
+                    }
+                });
+            }
+
+            // Sticky Header
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

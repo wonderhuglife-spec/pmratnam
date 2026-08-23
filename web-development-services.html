@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- STREAMING_CHUNK:Configuring SEO meta tags... -->
+    <title>Software Development Services in Hyderabad | PMR Digital</title>
+    <meta name="description" content="Expert Software Development services by Mani Ratnam in Hyderabad. Build custom enterprise applications, SaaS platforms, and scalable cloud solutions tailored to your business.">
+    <meta name="keywords" content="Software development Hyderabad, custom software development, enterprise applications, SaaS development, PMR Digital, Mani Ratnam Parsapu">
+    <link rel="canonical" href="https://pmratnam.com/software-development.html">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            orange: '#FF3300', 
+                            teal: '#006B70',   
+                            dark: '#111827',
+                            light: '#F9FAFB'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for specialized styling -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .hero-bg-inner {
+            background: linear-gradient(135deg, #006B70 0%, #004d50 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #FF3300;
+        }
+        
+        /* Sticky Header Transition */
+        #header.scrolled {
+            background-color: #222429;
+            box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.3);
+        }
+        #header.scrolled #top-bar {
+            display: none;
+        }
+
+        /* Dropdown custom styling */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 280px;
+            background-color: #2a2c33;
+            border-top: 2px solid #E32636;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        .nav-item.group:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Native HTML5 Accordion Styling for FAQ */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #006B70; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #004d50; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- STREAMING_CHUNK:Rendering navigation header... -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 flex flex-col">
+        
+        <!-- Top Bar -->
+        <div id="top-bar" class="hidden lg:flex justify-between items-center px-6 py-2 bg-[#1c1d21] text-gray-300 text-sm border-b border-gray-700">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                <span class="font-medium tracking-wide">Plot. No – B5, Koteswara Rao Building, Ameerpet, Hyderabad - 500073</span>
+            </div>
+            
+            <div class="flex items-center gap-3 ml-8">
+                <i class="fas fa-envelope text-white text-lg"></i>
+                <a href="mailto:info@pmratnam.com" class="font-medium hover:text-white transition tracking-wide">info@pmratnam.com</a>
+            </div>
+            
+            <div class="flex items-center gap-8 ml-auto">
+                <div class="space-x-4 font-medium tracking-wide">
+                    <a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a> <span class="text-gray-600">/</span>
+                    <a href="terms-and-conditions.html" class="hover:text-white transition">Terms & Conditions</a>
+                </div>
+                <div class="flex items-center gap-3 ml-4">
+                    <i class="far fa-comments text-[#E32636] text-3xl"></i>
+                    <div class="flex flex-col">
+                        <span class="text-[11px] text-gray-400 leading-tight">Call anytime</span>
+                        <a href="tel:+918499932365" class="text-white font-bold text-base leading-tight tracking-wide">+91 8499932365</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <nav class="bg-[#222429] w-full py-4 px-4 lg:px-6 relative z-40 border-b border-gray-800">
+            <div class="max-w-[1400px] mx-auto flex justify-between items-center">
+                
+                <!-- Text Logo -->
+                <a href="index.html" class="flex-shrink-0">
+                    <span class="text-white text-3xl font-extrabold tracking-widest uppercase">PMRATNAM</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 xl:space-x-10">
+                    <a href="index.html" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Home</a>
+                    <a href="about.html" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">About</a>
+                    
+                    <!-- Services Dropdown Group -->
+                    <div class="relative nav-item group py-2">
+                        <a href="index.html#services" class="text-white font-bold hover:text-[#E32636] transition tracking-wide cursor-pointer flex items-center">
+                            Services
+                        </a>
+                        <div class="absolute left-0 top-[100%] mt-0 w-72 bg-[#2a2c33] border-t-2 border-[#E32636] shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
+                            <ul class="py-2">
+                                <li><a href="seo-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Search Engine Optimization</a></li>
+                                <li><a href="ppc-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Pay-Per-Click Advertising</a></li>
+                                <li><a href="smm-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Social Media Marketing</a></li>
+                                <li><a href="content-marketing.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Content Marketing</a></li>
+                                <li><a href="web-development.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Web Development</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="blog.html" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Blog</a>
+                    <a href="#contact" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Contact</a>
+                </div>
+
+                <!-- Right Actions (Desktop) -->
+                <div class="hidden lg:flex items-center gap-4 xl:gap-5">
+                    <button id="sidebar-open-btn-desktop" class="text-[#E32636] hover:text-white transition p-2 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+                    
+                    <div class="flex gap-2 mx-1 xl:mx-3">
+                        <a href="https://x.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="https://www.facebook.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-pinterest-p text-sm"></i></a>
+                        <a href="https://www.instagram.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-instagram text-sm"></i></a>
+                        <a href="https://www.youtube.com/@pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+                    
+                    <a href="#contact" class="bg-[#E32636] text-white px-6 py-2.5 font-bold hover:bg-red-700 transition rounded-sm text-[15px] shadow-md tracking-wide">Get Solution</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="sidebar-open-btn-mobile" class="text-[#E32636] focus:outline-none p-2">
+                        <i class="fas fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-[60] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <!-- Right Sidebar Menu -->
+    <div id="sidebar-menu" class="fixed top-0 right-0 h-full w-full sm:w-80 bg-white z-[70] transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col overflow-y-auto">
+        <div class="p-6 pb-4 border-b border-gray-100 relative">
+            <button id="sidebar-close-btn" class="absolute top-4 right-4 text-[#E32636] hover:text-red-700 text-2xl p-2 transition focus:outline-none z-10">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex flex-col items-center text-center mt-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-[0_0_15px_rgba(0,0,0,0.1)] mb-4 relative">
+                    <div class="absolute inset-0 rounded-full ring-2 ring-[#E32636] ring-offset-2 animate-pulse pointer-events-none"></div>
+                    <img src="Professional studio portrait of a man.png" alt="Parsapu Mani Ratnam" class="w-full h-full object-cover">
+                </div>
+                <p class="text-sm text-gray-600 font-medium leading-relaxed px-2">
+                    "I'm Parsapu Mani Ratnam — 'Your's Growth Strategist, AI & Marketing Consultant, and Entrepreneur dedicated to helping businesses embrace the future through technology, creativity, and measurable growth."
+                </p>
+            </div>
+        </div>
+
+        <div class="p-6 flex-grow flex flex-col pt-4">
+            <div class="space-y-4 font-bold text-gray-900 text-lg mb-8">
+                <a href="index.html" class="sidebar-link block hover:text-[#E32636] transition">Home</a>
+                <a href="about.html" class="sidebar-link block hover:text-[#E32636] transition">About</a>
+                <div>
+                    <div class="flex justify-between items-center cursor-pointer" id="sidebar-services-toggle">
+                        <span class="sidebar-link hover:text-[#E32636] transition">Brand Audit</span>
+                        <span class="text-[#E32636] text-xl font-bold" id="sidebar-services-icon">+</span>
+                    </div>
+                    <ul id="sidebar-services-content" class="hidden pl-4 mt-3 space-y-2 text-sm font-semibold text-gray-600">
+                        <li><a href="seo-services.html" class="sidebar-link block hover:text-[#E32636]">Search Engine Optimization</a></li>
+                        <li><a href="ppc-services.html" class="sidebar-link block hover:text-[#E32636]">Pay-Per-Click Advertising</a></li>
+                        <li><a href="smm-services.html" class="sidebar-link block hover:text-[#E32636]">Social Media Marketing</a></li>
+                        <li><a href="content-marketing.html" class="sidebar-link block hover:text-[#E32636]">Content Marketing</a></li>
+                        <li><a href="web-development.html" class="sidebar-link block hover:text-[#E32636]">Web Development</a></li>
+                    </ul>
+                </div>
+                <a href="blog.html" class="sidebar-link block hover:text-[#E32636] transition">Blog</a>
+                <a href="#contact" class="sidebar-link block hover:text-[#E32636] transition">Contact</a>
+            </div>
+
+            <div class="pt-6 border-t border-gray-200 space-y-6 mt-auto">
+                <div class="flex items-start gap-4">
+                    <div class="mt-1"><i class="fas fa-phone-volume text-[#E32636] text-xl"></i></div>
+                    <div>
+                        <p class="text-xs text-gray-400 font-medium">Call anytime</p>
+                        <a href="tel:+918499932365" class="text-gray-900 font-bold text-base hover:text-[#E32636] transition">+91 8499932365</a>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="mt-1"><i class="far fa-envelope text-[#E32636] text-xl"></i></div>
+                    <div>
+                        <p class="text-xs text-gray-400 font-medium">Send email</p>
+                        <a href="mailto:info@pmratnam.com" class="text-gray-900 font-bold text-sm hover:text-[#E32636] transition break-all">info@pmratnam.com</a>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="mt-1"><i class="fas fa-map-marker-alt text-[#E32636] text-xl px-0.5"></i></div>
+                    <div>
+                        <p class="text-gray-600 font-medium text-sm leading-relaxed">
+                            Plot. No – B5, Koteswara Rao Building<br>Ameerpet, Hyderabad - 500073
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 mt-8 pb-4">
+                <a href="https://x.com/pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/pmratnam" target="_blank" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.instagram.com/pmratnam" target="_blank" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@pmratnam" target="_blank" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering hero banner... -->
+    <main class="flex-grow pt-24 lg:pt-32">
+        <section class="hero-bg-inner pt-32 pb-16 lg:pt-40 lg:pb-24 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+                <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full border-4 border-white"></div>
+                <div class="absolute bottom-10 left-10 w-48 h-48 rounded-full border-2 border-white"></div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Breadcrumbs -->
+                <nav class="flex text-sm text-teal-100 mb-6" aria-label="Breadcrumb">
+                  <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                      <a href="index.html" class="inline-flex items-center hover:text-white transition">
+                        <i class="fas fa-home mr-2"></i> Home
+                      </a>
+                    </li>
+                    <li>
+                      <div class="flex items-center">
+                        <i class="fas fa-chevron-right text-xs mx-2"></i>
+                        <a href="web-development.html" class="hover:text-white transition">Web Development</a>
+                      </div>
+                    </li>
+                    <li aria-current="page">
+                      <div class="flex items-center">
+                        <i class="fas fa-chevron-right text-xs mx-2"></i>
+                        <span class="text-white font-semibold">Software Development</span>
+                      </div>
+                    </li>
+                  </ol>
+                </nav>
+
+                <div class="grid lg:grid-cols-5 gap-12 items-center">
+                    <div class="lg:col-span-3 text-white">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white font-medium text-xs mb-6 uppercase tracking-wider">
+                            Bespoke Software Engineering
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                            Software Development <br>
+                            <span class="text-brand-orange">Services</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-teal-50 mb-8 max-w-2xl leading-relaxed">
+                            Turn your digital product idea into reality. I build robust, scalable custom software applications, SaaS platforms, and enterprise-grade solutions tailored to your specific business workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#contact" class="bg-brand-orange text-white px-8 py-3.5 rounded-full font-bold hover:bg-white hover:text-brand-orange transition shadow-lg flex items-center justify-center gap-2">
+                                Start Your Software Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-2 hidden lg:block">
+                        <img src="https://placehold.co/600x500/FFFFFF/006B70?text=Software+Development" alt="Software Development Illustration" class="rounded-2xl shadow-2xl transform rotate-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STREAMING_CHUNK:Rendering introduction section... -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm">Engineered Growth</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-6">Why Choose Custom Software Development?</h2>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            Off-the-shelf software often comes with rigid limitations and unnecessary bloat. Custom software solutions are engineered precisely around your business goals, ensuring unique functionality that gives you a genuine competitive advantage.
+                        </p>
+                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+                            Whether you need a complex SaaS platform, a bespoke dashboard for internal operations, or a highly specialized public-facing application, I deliver secure, scalable, and lightning-fast software solutions.
+                        </p>
+                        
+                        <a href="#contact" class="text-brand-teal font-bold hover:text-brand-orange transition flex items-center gap-2">
+                            Speak to a Development Architect <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-brand-teal text-xl mb-4"><i class="fas fa-code"></i></div>
+                            <h4 class="font-bold text-gray-900 mb-2">Tailored Logic</h4>
+                            <p class="text-sm text-gray-600">Bespoke features and business logic designed exactly for your unique workflows.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-brand-orange text-xl mb-4"><i class="fas fa-microchip"></i></div>
+                            <h4 class="font-bold text-gray-900 mb-2">Scalable Architecture</h4>
+                            <p class="text-sm text-gray-600">Built to handle thousands of users, complex databases, and future feature expansions.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-brand-teal text-xl mb-4"><i class="fas fa-shield-alt"></i></div>
+                            <h4 class="font-bold text-gray-900 mb-2">Security-First</h4>
+                            <p class="text-sm text-gray-600">Advanced end-to-end encryption, secure API integrations, and robust database privacy.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-brand-orange text-xl mb-4"><i class="fas fa-rocket"></i></div>
+                            <h4 class="font-bold text-gray-900 mb-2">High Performance</h4>
+                            <p class="text-sm text-gray-600">Clean, optimized codebases that deliver ultra-fast load times for a superior user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STREAMING_CHUNK:Rendering process breakdown... -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm">Methodology</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-4">Our Development Lifecycle</h2>
+                    <p class="text-gray-600 text-lg">
+                        A rigorous engineering process taking your software from initial vision to stable deployment and scale.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-teal-50 rounded-bl-full -z-0"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl font-extrabold text-gray-100 mb-4 absolute right-0 -top-4">01</div>
+                            <h3 class="text-xl font-bold text-brand-teal mb-3">Discovery & Specification</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Defining core features, technical requirements, stack selection, and MVP roadmap.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-orange-50 rounded-bl-full -z-0"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl font-extrabold text-gray-100 mb-4 absolute right-0 -top-4">02</div>
+                            <h3 class="text-xl font-bold text-brand-orange mb-3">UI/UX Prototyping</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Designing interactive screen flows and user journeys to validate core app logic before coding.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-teal-50 rounded-bl-full -z-0"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl font-extrabold text-gray-100 mb-4 absolute right-0 -top-4">03</div>
+                            <h3 class="text-xl font-bold text-brand-teal mb-3">Full-Stack Development</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Developing frontend interfaces and robust backend cloud APIs using modern, scalable frameworks.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-orange-50 rounded-bl-full -z-0"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl font-extrabold text-gray-100 mb-4 absolute right-0 -top-4">04</div>
+                            <h3 class="text-xl font-bold text-brand-orange mb-3">QA & Stress Testing</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Extensive bug testing, security vulnerability scanning, and performance optimizations under load.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-teal-50 rounded-bl-full -z-0"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl font-extrabold text-gray-100 mb-4 absolute right-0 -top-4">05</div>
+                            <h3 class="text-xl font-bold text-brand-teal mb-3">Deployment & DevOps</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Setting up production servers, CI/CD pipelines, and robust database backups.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-orange-50 rounded-bl-full -z-0"></div>
+                        <div class="relative z-10">
+                            <div class="text-4xl font-extrabold text-gray-100 mb-4 absolute right-0 -top-4">06</div>
+                            <h3 class="text-xl font-bold text-brand-orange mb-3">Maintenance & Scaling</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Providing continuous monitoring, security updates, and feature enhancements as you grow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STREAMING_CHUNK:Rendering FAQ section... -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm">Queries</span>
+                    <h2 class="text-3xl font-bold text-brand-dark mt-2">Custom Development FAQ</h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <details class="group bg-gray-50 rounded-xl border border-gray-100 open:bg-white open:border-brand-teal open:shadow-sm transition-all duration-300">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-gray-900">
+                            <span>Which tech stack do you recommend?</span>
+                            <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-brand-teal"></i></span>
+                        </summary>
+                        <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed">
+                            We select the tech stack based on project requirements. Our primary expertise lies in modern full-stack frameworks including React, Node.js, Python, Laravel, and serverless architectures (AWS/Firebase) to ensure maximum scalability and performance.
+                        </div>
+                    </details>
+                    
+                    <details class="group bg-gray-50 rounded-xl border border-gray-100 open:bg-white open:border-brand-teal open:shadow-sm transition-all duration-300">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-gray-900">
+                            <span>How do you handle post-launch support?</span>
+                            <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-brand-teal"></i></span>
+                        </summary>
+                        <div class="text-gray-600 px-6 pb-6 pt-0 leading-relaxed">
+                            We provide flexible maintenance retainers for monitoring server health, security patching, and ongoing feature development to keep your platform evolving with your business needs.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- STREAMING_CHUNK:Rendering contact form section... -->
+        <section id="contact" class="py-20 bg-gray-50 border-t border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <div>
+                        <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm">Get in Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-6">Ready to Build Your Custom Platform?</h2>
+                        <p class="text-gray-600 mb-8 text-lg">
+                            Have a software idea? Let's discuss your technical requirements and build a high-performance solution.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-teal text-xl shrink-0 shadow-sm border border-gray-100"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 text-lg">Location</h4>
+                                    <p class="text-gray-600">Plot. No – B5, Koteswara Rao Building, Ameerpet, Hyderabad - 500073<br><span class="text-sm text-brand-teal">(Available for Global Remote Work)</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-orange text-xl shrink-0 shadow-sm border border-gray-100"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 text-lg">Call Me</h4>
+                                    <a href="tel:+918499932365" class="text-gray-600 hover:text-brand-orange transition">+91 8499932365</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-teal text-xl shrink-0 shadow-sm border border-gray-100"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 text-lg">Email Me</h4>
+                                    <a href="mailto:info@pmratnam.com" class="text-gray-600 hover:text-brand-orange transition">info@pmratnam.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Request Dev Consultation</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-gray-50 focus:bg-white">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                                    <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-gray-50 focus:bg-white">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-gray-50 focus:bg-white">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="project_type" class="block text-sm font-medium text-gray-700 mb-1">Project Type *</label>
+                                <select id="project_type" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition bg-gray-50 focus:bg-white">
+                                    <option value="">Select an option</option>
+                                    <option value="web_app">Custom Web Application</option>
+                                    <option value="saas">SaaS Platform</option>
+                                    <option value="dashboard">Internal Business Dashboard</option>
+                                    <option value="mvp">MVP Development</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Requirements & Goals *</label>
+                                <textarea id="message" rows="3" required placeholder="Describe your project needs..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-brand-teal outline-none transition resize-none bg-gray-50 focus:bg-white"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-orange text-white font-bold py-4 rounded-lg hover:bg-red-700 transition shadow-md mt-4">
+                                Get Free Consultation
+                            </button>
+                            <div id="formSuccess" class="hidden mt-4 p-4 bg-green-50 text-green-800 rounded-lg text-sm font-medium text-center border border-green-200">
+                                Request received! I will review your details and contact you shortly.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- STREAMING_CHUNK:Rendering footer... -->
+    <footer class="bg-brand-teal text-white pt-16 pb-8 border-t-4 border-brand-orange">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Column 1: Digital Marketing -->
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Digital Marketing</h4>
+                    <ul class="space-y-3 mt-4 text-sm">
+                        <li><a href="seo-services.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Search Engine Optimization</a></li>
+                        <li><a href="ppc-services.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Pay Per Click</a></li>
+                        <li><a href="smm-services.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Social Media Marketing</a></li>
+                        <li><a href="content-marketing.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Content Marketing</a></li>
+                        <li><a href="influencer-marketing.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Influencer Marketing</a></li>
+                        <li><a href="reputation-management.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Reputation Management</a></li>
+                        <li><a href="marketplace-marketing.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Marketplace Marketing</a></li>
+                        <li><a href="digital-enablement-audit.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Digital Enablement Audit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Branding Solutions -->
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Branding Solutions</h4>
+                    <ul class="space-y-3 mt-4 text-sm">
+                        <li><a href="logo-design.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Logo Design</a></li>
+                        <li><a href="personal-branding.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Personal Branding</a></li>
+                        <li><a href="corporate-branding.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Corporate Branding</a></li>
+                        <li><a href="packaging.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Packaging</a></li>
+                        <li><a href="video-production.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Video Production</a></li>
+                        <li><a href="brand-management.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Brand Audit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Web Development -->
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Web Development</h4>
+                    <ul class="space-y-3 mt-4 text-sm">
+                        <li><a href="web-designing.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Web Designing</a></li>
+                        <li><a href="ecommerce-development.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> E-commerce Development</a></li>
+                        <li><a href="shopify-development.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Shopify Development</a></li>
+                        <li><a href="wordpress-development.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> WordPress Development</a></li>
+                        <li><a href="custom-web-development.html" class="text-brand-orange font-bold transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Custom Web Development</a></li>
+                        <li><a href="app-development.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Application Development</a></li>
+                        <li><a href="web-development.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-xs"></i> Website Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Me -->
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Contact Me</h4>
+                    <ul class="space-y-4 mt-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-location-arrow mt-1 shrink-0"></i>
+                            <span>Plot. No – B5, Koteswara Rao Building, Ameerpet, Hyderabad - 500073</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-volume shrink-0"></i>
+                            <a href="tel:+918499932365" class="hover:text-brand-orange transition">+91 8499932365</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="far fa-envelope shrink-0"></i>
+                            <a href="mailto:info@pmratnam.com" class="hover:text-brand-orange transition">info@pmratnam.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-history shrink-0"></i>
+                            <span>Mon – Sat: 09:00 AM – 7:00 PM</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- Red Square Social Icons matching reference -->
+                    <div class="mt-6 pt-4 border-t border-white/20 flex gap-2">
+                        <a href="https://www.facebook.com/pmratnam" target="_blank" aria-label="Facebook" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="https://x.com/pmratnam" target="_blank" aria-label="Twitter" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="https://www.youtube.com/@pmratnam" target="_blank" aria-label="YouTube" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-youtube text-sm"></i></a>
+                        <a href="https://www.instagram.com/pmratnam" target="_blank" aria-label="Instagram" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-instagram text-sm"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="w-9 h-9 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-linkedin-in text-sm"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="mt-12 text-center text-sm border-t border-white/20 pt-6">
+                <p>&copy; <span id="current-year"></span> Mani Ratnam Parsapu | PMR Digital Marketing Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STREAMING_CHUNK:Initializing interactivity scripts... -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            const sidebar = document.getElementById('sidebar-menu');
+            const overlay = document.getElementById('sidebar-overlay');
+            const openBtnDesktop = document.getElementById('sidebar-open-btn-desktop');
+            const openBtnMobile = document.getElementById('sidebar-open-btn-mobile');
+            const closeBtn = document.getElementById('sidebar-close-btn');
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            
+            const servicesToggle = document.getElementById('sidebar-services-toggle');
+            const servicesContent = document.getElementById('sidebar-services-content');
+            const servicesIcon = document.getElementById('sidebar-services-icon');
+
+            function openSidebar() {
+                sidebar.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeSidebar() {
+                sidebar.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            if (openBtnDesktop) openBtnDesktop.addEventListener('click', openSidebar);
+            if (openBtnMobile) openBtnMobile.addEventListener('click', openSidebar);
+            if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
+            if (overlay) overlay.addEventListener('click', closeSidebar);
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', closeSidebar);
+            });
+
+            if(servicesToggle) {
+                servicesToggle.addEventListener('click', () => {
+                    servicesContent.classList.toggle('hidden');
+                    if(servicesContent.classList.contains('hidden')){
+                        servicesIcon.textContent = '+';
+                    } else {
+                        servicesIcon.textContent = '-';
+                    }
+                });
+            }
+
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Form Submission Simulation
+            const form = document.getElementById('contactForm');
+            const successMsg = document.getElementById('formSuccess');
+
+            if(form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerText;
+                    submitBtn.innerText = 'Sending Request...';
+                    submitBtn.disabled = true;
+
+                    setTimeout(() => {
+                        form.reset();
+                        submitBtn.innerText = originalText;
+                        submitBtn.disabled = false;
+                        successMsg.classList.remove('hidden');
+                        
+                        setTimeout(() => {
+                            successMsg.classList.add('hidden');
+                        }, 5000);
+                    }, 1500);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+```eof

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Privacy Policy | PMR Digital Marketing Agency</title>
+    <meta name="description" content="Privacy Policy for PMR Digital Marketing Agency. Learn how we collect, use, and protect your personal information.">
+    <meta name="robots" content="noindex, nofollow"> <!-- Often standard for legal pages to not clog search results, though optional -->
+    <link rel="canonical" href="https://pmratnam.com/privacy-policy.html">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            orange: '#FF3300', 
+                            teal: '#006B70',   
+                            dark: '#111827',
+                            light: '#F9FAFB'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .hero-bg-inner {
+            background: linear-gradient(135deg, #006B70 0%, #004d50 100%);
+        }
+        
+        /* Sticky Header Transition */
+        #header.scrolled {
+            background-color: #222429;
+            box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.3);
+        }
+        #header.scrolled #top-bar {
+            display: none;
+        }
+
+        /* Dropdown custom styling */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 280px;
+            background-color: #2a2c33;
+            border-top: 2px solid #E32636;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        .nav-item.group:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #006B70; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #004d50; }
+        
+        /* Legal Content Styling */
+        .legal-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .legal-content p {
+            color: #4b5563;
+            margin-bottom: 1.25rem;
+            line-height: 1.75;
+        }
+        .legal-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 flex flex-col">
+        
+        <!-- Top Bar -->
+        <div id="top-bar" class="hidden lg:flex justify-between items-center px-6 py-2 bg-[#1c1d21] text-gray-300 text-sm border-b border-gray-700">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                <span class="font-medium tracking-wide">Plot. No – B5, Koteswara Rao Building, Ameerpet, Hyderabad - 500073</span>
+            </div>
+            
+            <div class="flex items-center gap-3 ml-8">
+                <i class="fas fa-envelope text-white text-lg"></i>
+                <a href="mailto:info@pmratnam.com" class="font-medium hover:text-white transition tracking-wide">info@pmratnam.com</a>
+            </div>
+            
+            <div class="flex items-center gap-8 ml-auto">
+                <div class="space-x-4 font-medium tracking-wide">
+                    <a href="about.html" class="hover:text-white transition">About</a> <span class="text-gray-600">/</span>
+                    <a href="index.html#faq" class="hover:text-white transition">FAQ's</a> <span class="text-gray-600">/</span>
+                    <a href="index.html#contact" class="hover:text-white transition">Contact</a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="far fa-comments text-[#E32636] text-3xl"></i>
+                    <div class="flex flex-col">
+                        <span class="text-[11px] text-gray-400 leading-tight">Call anytime</span>
+                        <a href="tel:+918499932365" class="text-white font-bold text-base leading-tight tracking-wide">+91 8499932365</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <nav class="bg-[#222429] w-full py-4 px-4 lg:px-6 relative z-40 border-b border-gray-800">
+            <div class="max-w-[1400px] mx-auto flex justify-between items-center">
+                
+                <!-- Text Logo -->
+                <a href="index.html" class="flex-shrink-0">
+                    <span class="text-white text-3xl font-extrabold tracking-widest uppercase">PMRATNAM</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 xl:space-x-10">
+                    <a href="index.html" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Home</a>
+                    <a href="about.html" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">About</a>
+                    
+                    <!-- Services Dropdown Group -->
+                    <div class="relative nav-item group py-2">
+                        <a href="index.html#services" class="text-white font-bold hover:text-[#E32636] transition tracking-wide cursor-pointer flex items-center">
+                            Services
+                        </a>
+                        <div class="absolute left-0 top-[100%] mt-0 w-72 bg-[#2a2c33] border-t-2 border-[#E32636] shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
+                            <ul class="py-2">
+                                <li><a href="seo-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Search Engine Optimization</a></li>
+                                <li><a href="ppc-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Pay-Per-Click Advertising</a></li>
+                                <li><a href="smm-services.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Social Media Marketing</a></li>
+                                <li><a href="content-marketing.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Content Marketing</a></li>
+                                <li><a href="web-development.html" class="block px-6 py-3 text-sm font-bold text-white hover:text-[#E32636] hover:bg-gray-800 transition">Web Development</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="index.html#blog" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Blog</a>
+                    <a href="index.html#contact" class="text-white font-bold hover:text-[#E32636] transition tracking-wide">Contact</a>
+                </div>
+
+                <!-- Right Actions (Desktop) -->
+                <div class="hidden lg:flex items-center gap-4 xl:gap-5">
+                    <button id="sidebar-open-btn-desktop" class="text-[#E32636] hover:text-white transition p-2 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+                    
+                    <div class="flex gap-2 mx-1 xl:mx-3">
+                        <a href="https://x.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="https://www.facebook.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-pinterest-p text-sm"></i></a>
+                        <a href="https://www.instagram.com/pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-instagram text-sm"></i></a>
+                        <a href="https://www.youtube.com/@pmratnam" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-[#E32636] transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+                    
+                    <a href="index.html#contact" class="bg-[#E32636] text-white px-6 py-2.5 font-bold hover:bg-red-700 transition rounded-sm text-[15px] shadow-md tracking-wide">Get Solution</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="sidebar-open-btn-mobile" class="text-[#E32636] focus:outline-none p-2">
+                        <i class="fas fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-[60] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <!-- Right Sidebar Menu -->
+    <div id="sidebar-menu" class="fixed top-0 right-0 h-full w-full sm:w-80 bg-white z-[70] transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col overflow-y-auto">
+        <!-- Sidebar Header -->
+        <div class="p-6 flex justify-between items-center border-b border-gray-100">
+            <span class="text-xl font-black text-gray-900 tracking-wider">PMRATNAM</span>
+            <button id="sidebar-close-btn" class="text-red-600 hover:text-red-800 text-2xl transition focus:outline-none p-1">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar Navigation Links -->
+        <div class="p-6 flex-grow space-y-6">
+            <!-- Profile Info integrated into sidebar -->
+            <div class="flex flex-col items-center text-center mb-6 pb-6 border-b border-gray-100">
+                <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-[#E32636] shadow-sm mb-4">
+                    <img src="Professional studio portrait of a man.png" alt="Parsapu Mani Ratnam" class="w-full h-full object-cover">
+                </div>
+                <p class="text-xs text-gray-500 font-medium leading-relaxed px-2">
+                    "I'm Parsapu Mani Ratnam (PMR)—a Digital Growth Strategist, AI & Marketing Consultant, and Entrepreneur."
+                </p>
+            </div>
+
+            <ul class="space-y-4 font-bold text-gray-900 text-lg">
+                <li><a href="index.html" class="sidebar-link hover:text-[#E32636] transition block">Home</a></li>
+                <li><a href="about.html" class="sidebar-link hover:text-[#E32636] transition block">About</a></li>
+                <li>
+                    <div class="flex justify-between items-center cursor-pointer" id="sidebar-services-toggle">
+                        <span class="sidebar-link hover:text-[#E32636] transition">Services</span>
+                        <span class="text-[#E32636] text-xl font-bold" id="sidebar-services-icon">+</span>
+                    </div>
+                    <ul id="sidebar-services-content" class="hidden pl-4 mt-3 space-y-2 text-sm font-semibold text-gray-600">
+                        <li><a href="seo-services.html" class="sidebar-link block hover:text-[#E32636]">SEO Optimization</a></li>
+                        <li><a href="ppc-services.html" class="sidebar-link block hover:text-[#E32636]">Pay-Per-Click Ads</a></li>
+                        <li><a href="smm-services.html" class="sidebar-link block hover:text-[#E32636]">Social Media Marketing</a></li>
+                        <li><a href="content-marketing.html" class="sidebar-link block hover:text-[#E32636]">Content Marketing</a></li>
+                        <li><a href="web-development.html" class="sidebar-link block hover:text-[#E32636]">Web Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" class="sidebar-link hover:text-[#E32636] transition block">Blog</a></li>
+                <li><a href="index.html#contact" class="sidebar-link hover:text-[#E32636] transition block">Contact</a></li>
+            </ul>
+
+            <hr class="border-gray-200 my-6">
+
+            <!-- Sidebar Contact Info -->
+            <div class="space-y-5 text-sm">
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-phone-volume text-[#E32636] text-xl mt-1"></i>
+                    <div>
+                        <p class="text-xs text-gray-400 font-medium">Call anytime</p>
+                        <a href="tel:+918499932365" class="text-gray-900 font-bold text-base hover:text-[#E32636] transition">+91 8499932365</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <i class="far fa-envelope text-[#E32636] text-xl mt-1"></i>
+                    <div>
+                        <p class="text-xs text-gray-400 font-medium">Send email</p>
+                        <a href="mailto:info@pmratnam.com" class="text-gray-900 font-bold text-sm hover:text-[#E32636] transition break-all">info@pmratnam.com</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <i class="fas fa-map-marker-alt text-[#E32636] text-xl mt-1 px-0.5"></i>
+                    <div>
+                        <p class="text-gray-600 leading-relaxed font-medium">
+                            Plot. No – B5, Koteswara Rao Building<br>
+                            Ameerpet, Hyderabad - 500073
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Social Icons (Red Square style) -->
+            <div class="flex gap-2 pt-4 pb-8">
+                <a href="https://x.com/pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.instagram.com/pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@pmratnam" target="_blank" class="w-10 h-10 bg-[#E32636] flex items-center justify-center text-white hover:bg-black transition rounded-sm"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow pt-24 lg:pt-32">
+    
+        <!-- Page Header -->
+        <section class="hero-bg-inner pt-24 pb-16 relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">Privacy Policy</h1>
+                <p class="text-teal-100 text-lg">Last updated: July 22, 2026</p>
+            </div>
+        </section>
+
+        <!-- Legal Content -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 legal-content">
+                <p>Welcome to PMR Digital Marketing Agency. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.</p>
+
+                <h2>1. Important Information and Who We Are</h2>
+                <p><strong>Purpose of this Privacy Policy</strong><br>
+                This privacy policy aims to give you information on how PMR Digital collects and processes your personal data through your use of this website, including any data you may provide through this website when you sign up to our newsletter, purchase a product or service, or take part in a competition.</p>
+                <p>This website is not intended for children and we do not knowingly collect data relating to children.</p>
+                <p><strong>Controller</strong><br>
+                Parsapu Mani Ratnam is the controller and responsible for your personal data (collectively referred to as "PMR Digital", "we", "us" or "our" in this privacy policy).</p>
+                <p><strong>Contact Details</strong><br>
+                If you have any questions about this privacy policy or our privacy practices, please contact us in the following ways:</p>
+                <ul>
+                    <li>Email address: info@pmratnam.com</li>
+                    <li>Postal address: Plot. No – B5, Koteswara Rao Building, Ameerpet, Hyderabad - 500073, Telangana, India.</li>
+                    <li>Telephone number: +91 8499932365</li>
+                </ul>
+
+                <h2>2. The Data We Collect About You</h2>
+                <p>Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data).</p>
+                <p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:</p>
+                <ul>
+                    <li><strong>Identity Data</strong> includes first name, last name, username or similar identifier, title.</li>
+                    <li><strong>Contact Data</strong> includes billing address, delivery address, email address and telephone numbers.</li>
+                    <li><strong>Technical Data</strong> includes internet protocol (IP) address, your login data, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform, and other technology on the devices you use to access this website.</li>
+                    <li><strong>Usage Data</strong> includes information about how you use our website, products and services.</li>
+                    <li><strong>Marketing and Communications Data</strong> includes your preferences in receiving marketing from us and our third parties and your communication preferences.</li>
+                </ul>
+
+                <h2>3. How Is Your Personal Data Collected?</h2>
+                <p>We use different methods to collect data from and about you including through:</p>
+                <ul>
+                    <li><strong>Direct interactions.</strong> You may give us your Identity and Contact by filling in forms or by corresponding with us by post, phone, email or otherwise. This includes personal data you provide when you:
+                        <ul>
+                            <li>apply for our products or services;</li>
+                            <li>subscribe to our service or publications;</li>
+                            <li>request marketing to be sent to you;</li>
+                            <li>give us feedback or contact us.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Automated technologies or interactions.</strong> As you interact with our website, we will automatically collect Technical Data about your equipment, browsing actions and patterns. We collect this personal data by using cookies, server logs and other similar technologies.</li>
+                </ul>
+
+                <h2>4. How We Use Your Personal Data</h2>
+                <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
+                <ul>
+                    <li>Where we need to perform the contract we are about to enter into or have entered into with you.</li>
+                    <li>Where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests.</li>
+                    <li>Where we need to comply with a legal obligation.</li>
+                </ul>
+                <p>Generally, we do not rely on consent as a legal basis for processing your personal data although we will get your consent before sending third party direct marketing communications to you via email or text message. You have the right to withdraw consent to marketing at any time by contacting us.</p>
+
+                <h2>5. Data Security</h2>
+                <p>We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know. They will only process your personal data on our instructions and they are subject to a duty of confidentiality.</p>
+
+                <h2>6. Data Retention</h2>
+                <p>We will only retain your personal data for as long as reasonably necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, regulatory, tax, accounting or reporting requirements. We may retain your personal data for a longer period in the event of a complaint or if we reasonably believe there is a prospect of litigation in respect to our relationship with you.</p>
+
+                <h2>7. Your Legal Rights</h2>
+                <p>Under certain circumstances, you have rights under data protection laws in relation to your personal data, including the right to:</p>
+                <ul>
+                    <li>Request access to your personal data.</li>
+                    <li>Request correction of your personal data.</li>
+                    <li>Request erasure of your personal data.</li>
+                    <li>Object to processing of your personal data.</li>
+                    <li>Request restriction of processing your personal data.</li>
+                    <li>Request transfer of your personal data.</li>
+                    <li>Right to withdraw consent.</li>
+                </ul>
+                <p>If you wish to exercise any of the rights set out above, please contact us at info@pmratnam.com.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-brand-teal text-white pt-16 pb-8 border-t-4 border-brand-orange">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Quick Links</h4>
+                    <ul class="space-y-3 mt-4">
+                        <li><a href="index.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> About Mani Ratnam</a></li>
+                        <li><a href="portfolio.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> My Portfolio</a></li>
+                        <li><a href="blog.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Digital Blogs</a></li>
+                        <li><a href="index.html#contact" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Contact Me</a></li>
+                        <li><a href="privacy-policy.html" class="text-brand-orange font-bold transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">WEB Solutions</h4>
+                    <ul class="space-y-3 mt-4">
+                        <li><a href="web-development.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Website Development</a></li>
+                        <li><a href="ai-automation.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> AI Automation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Digital Marketing</h4>
+                    <ul class="space-y-3 mt-4">
+                        <li><a href="seo-services.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> SEO Optimization</a></li>
+                        <li><a href="ppc-services.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Google Ads (PPC)</a></li>
+                        <li><a href="smm-services.html" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fas fa-arrow-circle-right text-sm"></i> Social Media Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-normal mb-4 border-b border-white/30 pb-2 inline-block w-full">Contact Me</h4>
+                    <ul class="space-y-4 mt-4 text-sm">
+                        <li><i class="fas fa-location-arrow mr-2"></i> Ameerpet, Hyderabad - 500073</li>
+                        <li><i class="fas fa-phone-volume mr-2"></i> <a href="tel:+918499932365">+91 8499932365</a></li>
+                        <li><i class="far fa-envelope mr-2"></i> <a href="mailto:info@pmratnam.com">info@pmratnam.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-sm border-t border-white/20 pt-6">
+                <p>&copy; <span id="current-year"></span> Mani Ratnam Parsapu | PMR Digital Marketing Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chatbot Floating Button -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3 group cursor-pointer">
+        <div class="bg-white px-4 py-2.5 rounded-2xl shadow-xl border border-gray-100 text-sm font-bold text-gray-700 opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 hidden md:block">
+            Chat with me! 👋
+        </div>
+        <a href="https://wa.me/918499932365" target="_blank" rel="noopener noreferrer" class="relative flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 transition-transform duration-300">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-40 animate-ping"></span>
+            <i class="fab fa-whatsapp text-[36px] relative z-10"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            const sidebar = document.getElementById('sidebar-menu');
+            const overlay = document.getElementById('sidebar-overlay');
+            const openBtnDesktop = document.getElementById('sidebar-open-btn-desktop');
+            const openBtnMobile = document.getElementById('sidebar-open-btn-mobile');
+            const closeBtn = document.getElementById('sidebar-close-btn');
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            
+            const servicesToggle = document.getElementById('sidebar-services-toggle');
+            const servicesContent = document.getElementById('sidebar-services-content');
+            const servicesIcon = document.getElementById('sidebar-services-icon');
+
+            function openSidebar() {
+                sidebar.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeSidebar() {
+                sidebar.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            if (openBtnDesktop) openBtnDesktop.addEventListener('click', openSidebar);
+            if (openBtnMobile) openBtnMobile.addEventListener('click', openSidebar);
+            if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
+            if (overlay) overlay.addEventListener('click', closeSidebar);
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', closeSidebar);
+            });
+
+            if(servicesToggle) {
+                servicesToggle.addEventListener('click', () => {
+                    servicesContent.classList.toggle('hidden');
+                    if(servicesContent.classList.contains('hidden')){
+                        servicesIcon.textContent = '+';
+                    } else {
+                        servicesIcon.textContent = '-';
+                    }
+                });
+            }
+
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
