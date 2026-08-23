@@ -107,3 +107,75 @@ function pmr_json_encode(array $data): string
     $json = json_encode($data, JSON_UNESCAPED_UNICODE);
     return $json === false ? '{}' : $json;
 }
+
+function pmr_flash_set(string $type, string $message): void
+{
+    pmr_start_session();
+    $_SESSION['_flash'] = ['type' => $type, 'message' => $message];
+}
+
+function pmr_flash_get(): ?array
+{
+    pmr_start_session();
+    $flash = $_SESSION['_flash'] ?? null;
+    unset($_SESSION['_flash']);
+    return is_array($flash) ? $flash : null;
+}
+
+function pmr_slugify(string $value): string
+{
+    $value = strtolower(trim($value));
+    $value = preg_replace('/[^a-z0-9]+/i', '-', $value) ?? '';
+    $value = trim($value, '-');
+    return substr($value, 0, 180);
+}
+
+function pmr_table_count(string $table): int
+{
+    static $allowed = [
+        'pages' => true,
+        'posts' => true,
+        'categories' => true,
+        'media' => true,
+        'leads' => true,
+        'admins' => true,
+        'menus' => true,
+        'redirects' => true,
+    ];
+    if (!isset($allowed[$table])) {
+        throw new InvalidArgumentException('Unknown table');
+    }
+    try {
+        return (int) pmr_pdo()->query('SELECT COUNT(*) FROM `' . $table . '`')->fetchColumn();
+    } catch (Throwable $e) {
+        return 0;
+    }
+}
+
+function pmr_request_string(string $key, string $default = ''): string
+{
+    $value = $_POST[$key] ?? $_GET[$key] ?? $default;
+    return is_string($value) ? trim($value) : $default;
+}
+
+function pmr_request_int(string $key, int $default = 0): int
+{
+    $value = $_POST[$key] ?? $_GET[$key] ?? $default;
+    return filter_var($value, FILTER_VALIDATE_INT) !== false ? (int) $value : $default;
+}
+
+function pmr_require_csrf(): void
+{
+    if (!pmr_csrf_verify($_POST['_csrf'] ?? null)) {
+        http_response_code(400);
+        exit('Invalid security token.');
+    }
+}
+
+function pmr_media_public_url(?array $media): ?string
+{
+    if ($media === null || empty($media['disk_path'])) {
+        return null;
+    }
+    return '/' . ltrim((string) $media['disk_path'], '/');
+}

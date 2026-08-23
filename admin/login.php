@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <form method="post" autocomplete="off">
     <h1>PMRatnam admin</h1>
-    <p>Sign in to manage the site. Dashboard UI ships in the next phase.</p>
+    <p>Sign in to manage pages, media, and site settings.</p>
     <?php if ($error): ?><p class="err"><?= pmr_h($error) ?></p><?php endif; ?>
     <?= pmr_csrf_field() ?>
     <label for="email">Email</label>
