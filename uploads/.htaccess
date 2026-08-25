@@ -1,0 +1,6 @@
+# Block PHP in uploads (Hostinger will honor this when AllowOverride is All).
+<FilesMatch "\.(php|phtml|phar|cgi|pl)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes
+php_flag engine off
